@@ -29,3 +29,19 @@ TODO: Insert highlight here
 </td>
 </tr>
 </table>
+
+---
+
+<!-- Modelling Toolbox Illustration -->
+<table>
+<tr>
+<td width="60%">
+
+TODO: Insert Synthetic Data Generation Approaches here
+
+</td>
+<td width="40%">
+  <img src="ImageStuff/ZFig003_ModellingToolBox.png" alt="Modelling Toolbox for Synthetic Data" width="300"/>
+</td>
+</tr>
+</table>
