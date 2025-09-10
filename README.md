@@ -45,3 +45,32 @@ TODO: Insert Synthetic Data Generation Approaches here
 </td>
 </tr>
 </table>
+
+---
+
+# Team
+
+<table>
+<tr>
+<td align="center">
+  <img src="ImageStuff/Nic-kuo@2x.png" alt="Nic Kuo" width="140"/><br/>
+  <sub><b>Dr. Nic Kuo (UNSW)</b></sub>
+</td>
+<td align="center">
+  <img src="ImageStuff/Mark-polizzotto@2x.png" alt="Mark Polizzotto" width="140"/><br/>
+  <sub><b>Prof. Mark Polizzotto (ANU)</b></sub>
+</td>
+<td align="center">
+  <img src="ImageStuff/simon-finfer@2x.png" alt="Simon Finfer" width="140"/><br/>
+  <sub><b>Prof. Simon Finfer (UNSW)</b></sub>
+</td>
+<td align="center">
+  <img src="ImageStuff/Sebastiano-Barbieri@2x.png" alt="Sebastiano Barbieri" width="140"/><br/>
+  <sub><b>A/Prof. Sebastiano Barbieri (UQ)</b></sub>
+</td>
+<td align="center">
+  <img src="ImageStuff/Louisa-Jorm@2x.png" alt="Louisa Jorm" width="140"/><br/>
+  <sub><b>Prof-Director Louisa Jorm (UNSW)</b></sub>
+</td>
+</tr>
+</table>
