@@ -74,3 +74,20 @@ TODO: Insert Synthetic Data Generation Approaches here
 </td>
 </tr>
 </table>
+
+---
+
+<!-- CBDRH Branding -->
+<p align="left">
+  <img src="ImageStuff/Centre-for-big-data-1.png" alt="UNSW CBDRH Logo" width="300"/>
+</p>
+
+The **Health Gym AI** is a collection of research projects of the  
+**Centre for Big Data Research in Health (CBDRH), UNSW Sydney**.  
+
+- **Concept created by**: Sebastiano Barbieri & Louisa Jorm  
+- **Clinical domain expertise contributed by**: Mark Polizzotto & Simon Finfer  
+- **Implementation**: Nic Kuo  
+
+For any questions or interest in collaboration, please reach out to **Nic** at [n.kuo@unsw.edu.au](mailto:n.kuo@unsw.edu.au)
+
