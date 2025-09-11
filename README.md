@@ -114,20 +114,20 @@ For any questions or interest in collaboration, please reach out to Nic at [n.ku
 ---
 
 # References
-[1]: Kuo et al., "The Health Gym: Synthetic Health-Related Datasets for the Development of Reinforcement Learning Algorithms." Scientific Data (2022).
+[1]: [Kuo et al., "The Health Gym: Synthetic Health-Related Datasets for the Development of Reinforcement Learning Algorithms." Scientific Data (2022).](https://www.nature.com/articles/s41597-022-01784-7)
 
-[2]: Kuo et al., "Generating Synthetic Clinical Data that Capture Class Imbalanced Distributions with Generative Adversarial Networks: Example using Antiretroviral Therapy for HIV." Journal of Biomedical Informatics (2023).
+[2]: [Kuo et al., "Generating Synthetic Clinical Data that Capture Class Imbalanced Distributions with Generative Adversarial Networks: Example using Antiretroviral Therapy for HIV." Journal of Biomedical Informatics (2023).](https://www.sciencedirect.com/science/article/pii/S1532046423001570)
 
-[3]: Kuo et al., "Synthetic Health-related Longitudinal Data with Mixed-type Variables Generated using Diffusion Models." NeurIPS Workshop on Synthetic Data Generation with Generative AI (2023).
+[3]: [Kuo et al., "Synthetic Health-related Longitudinal Data with Mixed-type Variables Generated using Diffusion Models." NeurIPS Workshop on Synthetic Data Generation with Generative AI (2023).](https://openreview.net/forum?id=1MV49Ug6q9)
 
-[4]: Johnson et al., "MIMIC-III Clinical Database (version 1.4)." PhysioNet https://doi.org/10.13026/C2XW26 (2016).
+[4]: [Johnson et al., "MIMIC-III Clinical Database (version 1.4)." PhysioNet (2016).](https://doi.org/10.13026/C2XW26)
 
-[5]: Kuo et al., "Synthetic Acute Hypotension and Sepsis Datasets based on MIMIC-III and Published as Part of the Health Gym Project." arXiv preprint arXiv:2112.03914 (2021).
+[5]: [Kuo et al., "Synthetic Acute Hypotension and Sepsis Datasets based on MIMIC-III and Published as Part of the Health Gym Project." arXiv preprint (2021).](https://arxiv.org/pdf/2112.03914)
 
-[6]: Kuo et al., "Synthetic Acute Hypotension and Sepsis Datasets Based on MIMIC-III and Published as Part of the Health Gym Project." PhysioNet https://doi.org/10.13026/p0tv-0r98 (2022).
+[6]: [Kuo et al., "Synthetic Acute Hypotension and Sepsis Datasets Based on MIMIC-III and Published as Part of the Health Gym Project." PhysioNet (2022).](https://doi.org/10.13026/p0tv-0r98)
 
-[7]: Zazzi et al., "Predicting Response to Antiretroviral Treatment by Machine Learning: The EuResist Project." Intervirology (2012).
+[7]: [Zazzi et al., "Predicting Response to Antiretroviral Treatment by Machine Learning: The EuResist Project." Intervirology (2012).](https://pubmed.ncbi.nlm.nih.gov/22286881/)
 
-[8]: Kuo, Nicholas. "The Health Gym v2.0 Synthetic Antiretroviral Therapy (ART) for HIV Dataset." Figshare https://doi.org/10.6084/m9.figshare.22827878.v1 (2023).
+[8]: [Kuo, Nicholas. "The Health Gym v2.0 Synthetic Antiretroviral Therapy (ART) for HIV Dataset." Figshare (2023).](https://doi.org/10.6084/m9.figshare.22827878.v1)
 
-[9]: Kuo et al., "Enriching Data Science and Health Care Education: Application and Impact of Synthetic Data Sets through the Health Gym Project." JMIR Medical Education (2024).
+[9]: [Kuo et al., "Enriching Data Science and Health Care Education: Application and Impact of Synthetic Data Sets through the Health Gym Project." JMIR Medical Education (2024).](https://mededu.jmir.org/2024/1/e51388/)
