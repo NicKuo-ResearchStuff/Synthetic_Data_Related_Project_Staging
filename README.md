@@ -24,22 +24,6 @@ Health Gym [1] is a CBDRH initiative that releases privacy-preserving, realistic
 * Why it’s safe: ethics approved (UNSW HC210661); rigorous disclosure-risk assessment; and non-identicality checks.
 * Who it’s for: educators requiring data mimicking real world complexity, and researchers prototyping methods where access to real clinical data is restricted.
 
-[1]: Kuo et al., "The Health Gym: Synthetic Health-Related Datasets for the Development of Reinforcement Learning Algorithms." Scientific Data (2022).
-
-[2]: Kuo et al., "Generating Synthetic Clinical Data that Capture Class Imbalanced Distributions with Generative Adversarial Networks: Example using Antiretroviral Therapy for HIV." Journal of Biomedical Informatics (2023).
-
-[3]: Kuo et al., "Synthetic Health-related Longitudinal Data with Mixed-type Variables Generated using Diffusion Models." NeurIPS Workshop on Synthetic Data Generation with Generative AI (2023).
-
-[4]: Johnson et al., "MIMIC-III Clinical Database (version 1.4)." PhysioNet https://doi.org/10.13026/C2XW26 (2016).
-
-[5]: Kuo et al., "Synthetic Acute Hypotension and Sepsis Datasets based on MIMIC-III and Published as Part of the Health Gym Project." arXiv preprint arXiv:2112.03914 (2021).
-
-[6]: Kuo et al., "Synthetic Acute Hypotension and Sepsis Datasets Based on MIMIC-III and Published as Part of the Health Gym Project." PhysioNet https://doi.org/10.13026/p0tv-0r98 (2022).
-
-[7]: Zazzi et al., "Predicting Response to Antiretroviral Treatment by Machine Learning: The EuResist Project." Intervirology (2012).
-
-[8]: Kuo, Nicholas. "The Health Gym v2.0 Synthetic Antiretroviral Therapy (ART) for HIV Dataset." Figshare https://doi.org/10.6084/m9.figshare.22827878.v1 (2023).
-
 ---
 
 <!-- Side-by-side layout: text and illustration -->
@@ -117,3 +101,21 @@ Centre for Big Data Research in Health (CBDRH), UNSW Sydney.
 
 For any questions or interest in collaboration, please reach out to Nic at [n.kuo@unsw.edu.au](mailto:n.kuo@unsw.edu.au)
 
+---
+
+# References
+[1]: Kuo et al., "The Health Gym: Synthetic Health-Related Datasets for the Development of Reinforcement Learning Algorithms." Scientific Data (2022).
+
+[2]: Kuo et al., "Generating Synthetic Clinical Data that Capture Class Imbalanced Distributions with Generative Adversarial Networks: Example using Antiretroviral Therapy for HIV." Journal of Biomedical Informatics (2023).
+
+[3]: Kuo et al., "Synthetic Health-related Longitudinal Data with Mixed-type Variables Generated using Diffusion Models." NeurIPS Workshop on Synthetic Data Generation with Generative AI (2023).
+
+[4]: Johnson et al., "MIMIC-III Clinical Database (version 1.4)." PhysioNet https://doi.org/10.13026/C2XW26 (2016).
+
+[5]: Kuo et al., "Synthetic Acute Hypotension and Sepsis Datasets based on MIMIC-III and Published as Part of the Health Gym Project." arXiv preprint arXiv:2112.03914 (2021).
+
+[6]: Kuo et al., "Synthetic Acute Hypotension and Sepsis Datasets Based on MIMIC-III and Published as Part of the Health Gym Project." PhysioNet https://doi.org/10.13026/p0tv-0r98 (2022).
+
+[7]: Zazzi et al., "Predicting Response to Antiretroviral Treatment by Machine Learning: The EuResist Project." Intervirology (2012).
+
+[8]: Kuo, Nicholas. "The Health Gym v2.0 Synthetic Antiretroviral Therapy (ART) for HIV Dataset." Figshare https://doi.org/10.6084/m9.figshare.22827878.v1 (2023).
