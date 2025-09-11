@@ -1,4 +1,4 @@
-## Dataset Description
+## Hands On with ART for HIV 
 
 The Antiretroviral Therapy for HIV (ART for HIV) dataset is derived from the [EuResist Integrated Database (EIDB)](https://www.euresist.org/), which combines longitudinal treatment and laboratory records from multiple European cohorts.  
 Following the published inclusion and exclusion criteria, a cohort of 8,916 people living with HIV was selected.  
