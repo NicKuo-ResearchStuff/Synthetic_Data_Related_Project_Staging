@@ -53,7 +53,11 @@ Health Gym [1] is a CBDRH initiative that releases privacy-preserving, realistic
 <tr>
 <td width="60%">
 
-TODO: Insert Synthetic Data Generation Approaches here
+**Synthetic Data Generation Approaches**
+
+* GANs: Adversarially trained recurrent networks that generate realistic longitudinal patient trajectories, validated for fidelity and privacy.
+* Diffusion Models: Noise-based generative models that iteratively denoise to produce diverse, stable, and correlation-preserving synthetic health data.
+* Hybrid Custom Model: A GAN extended with VAE encoding and replay buffers to mitigate mode collapse, ensuring fairer representation of minority groups and rare treatments.
 
 </td>
 <td width="40%">
