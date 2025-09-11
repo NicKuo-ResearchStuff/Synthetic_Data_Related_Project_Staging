@@ -30,8 +30,14 @@ Health Gym [1] is a CBDRH initiative that releases privacy-preserving, realistic
 <table>
 <tr>
 <td width="60%">
-  
-TODO: Insert highlight here
+
+**Highlights of Health Gym**
+
+* Open access: freely available synthetic health datasets and code.
+* Safe to use: privacy-preserving, ethics-approved, and rigorously validated.
+* Realistic complexity: mixed-type longitudinal data (numeric, binary, categorical).
+* Education-ready: adopted in postgraduate courses & datathons at UNSW.
+* Research-enabling: supports ML, survival analysis, and reinforcement learning on clinically relevant cohorts.
 
 </td>
 <td width="40%">
