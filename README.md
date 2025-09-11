@@ -68,6 +68,26 @@ Health Gym [1] is a CBDRH initiative that releases privacy-preserving, realistic
 
 ---
 
+<!-- Side-by-side layout: text and illustration -->
+<table>
+<tr>
+<td width="60%">
+
+**Health Gym Chapters**
+
+* [Chapter 01](https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/Chapters/README.md): Hands-on with ART for HIV
+
+</td>
+<td width="40%">
+  <img src="ImageStuff/ZFig004_Chapters.png" alt="Health + Data Illustration" width="300"/>
+</td>
+</tr>
+</table>
+
+---
+
+---
+
 # Team
 
 <table>
