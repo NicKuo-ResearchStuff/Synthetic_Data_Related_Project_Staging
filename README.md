@@ -22,7 +22,7 @@ Health Gym [1] is a CBDRH initiative that releases privacy-preserving, realistic
   * Acute Hypotension (from MIMIC-III [4, 5, 6])
   * ART for HIV (from EuResist [7, 8])
 * Why it’s safe: ethics approved (UNSW HC210661); rigorous disclosure-risk assessment; and non-identicality checks.
-* Who it’s for: educators requiring data mimicking real world complexity, and researchers prototyping methods where access to real clinical data is restricted.
+* Who it’s for: educators requiring data mimicking real world complexity [9], and researchers prototyping methods where access to real clinical data is restricted.
 
 ---
 
@@ -119,3 +119,5 @@ For any questions or interest in collaboration, please reach out to Nic at [n.ku
 [7]: Zazzi et al., "Predicting Response to Antiretroviral Treatment by Machine Learning: The EuResist Project." Intervirology (2012).
 
 [8]: Kuo, Nicholas. "The Health Gym v2.0 Synthetic Antiretroviral Therapy (ART) for HIV Dataset." Figshare https://doi.org/10.6084/m9.figshare.22827878.v1 (2023).
+
+[9]: Kuo et al., "Enriching Data Science and Health Care Education: Application and Impact of Synthetic Data Sets through the Health Gym Project." JMIR Medical Education (2024).
