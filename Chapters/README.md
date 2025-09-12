@@ -88,7 +88,7 @@ We can quickly check the distributions of our variables, and let's use:
 
 That’s a wrap for this little hands-on session!
 
-If you’d like to try it yourself, I’ve prepared a Colab notebook with all the code: \[INSERT Colab link here]
+If you’d like to try it yourself, I’ve prepared a Colab notebook in this Github folder.
 
 Cheers,</br>
 \- Nic
