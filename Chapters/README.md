@@ -27,6 +27,29 @@ All_Data.replace({
     "Extra pk-En":     {0: "False", 1: "True"}
 }, inplace=True)
 
+# Let us drop this off for now...
 All_Data = All_Data.drop(columns=['Drug (M)'])
+```
+
+and if you were to execute
+```python
+All_Data.head()
+```
+you will see
+<img src="ImageStuff/ZFig004_ArtHivHead.png">
+We have the numeric variables for a patient's VL, CD4, and Rel CD4, and we have binary \& categorical variables for a patient's medication regimen combination.
+
+Furthermore, notice how the patient demographic, *i.e.,* sex and ethnicity, is also presented as a time series.
+
+If we were to further inspect the data
+```python
+All_Data[All_Data["PatientID"] == 0].shape[0]
+```
+you will see that the length is 60. This is because that in this dataset, all patients have 60 months of data, with their data sampled monthly in the rows, corresponding to Timestep 0 ~ 59.
+
+To further inspect the data, let us use KDE plots to show the distribution of the numeric variables, and let us use side-by-side bar plots to represent the binary \& categorical variables.
+<img src="ImageStuff/ZFig005_Distributions">
+<img src="ImageStuff/ZFig006_Distributions">
+
 
 
