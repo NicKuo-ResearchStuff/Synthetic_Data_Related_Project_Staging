@@ -84,45 +84,55 @@ And just as we provide a reverse mapping for categorical variables (`BinCat2Str`
 
 ---
 
-## Step 3: Sanity checks
+## Step 3: Sanity Checks
 
-After applying
+After applying our transformations:
 
 ```python
 # === Step 2–4: Transform Dataset ===
-All_Data = All_Data.drop(['PatientID', 'Timestep'], axis = 1)
+All_Data = All_Data.drop(['PatientID', 'Timestep'], axis=1)
 ART_Data_Num = BinCat2Num(All_Data)
 art_transformation_params = compute_boxcox_params(ART_Data_Num)
 ART_Data_Transformed = apply_boxcox_minmax_transform(ART_Data_Num, art_transformation_params)
 ```
 
-we can do
+we can run a few quick checks:
+
 ```python
 ART_Data_Num.head()
 ```
-<img src="ImageStuff/ZFig013_SanityCheck01.png" width="600"/>
-And here, we can see, for instance, Gender and Ethnic are no longer strings but instead integers that represent the unique values in the respective columns.
 
-we can do
+<img src="ImageStuff/ZFig013_SanityCheck01.png" width="600"/>  
+
+Now, `Gender` and `Ethnic` are integers instead of strings — exactly what our models need.
+
 ```python
 art_transformation_params
 ```
-<img src="ImageStuff/ZFig014_SanityCheck02.png" width="600"/>
+
+<img src="ImageStuff/ZFig014_SanityCheck02.png" width="600"/>  
+
+Here we see the Box–Cox λ and scaling ranges for each lab variable.
+These parameters are saved so we can later invert the transforms during post-processing.
+
+
+```python
+ART_Data_Transformed.head()
+```
+
+<img src="ImageStuff/ZFig015_SanityCheck03.png" width="600"/>  
+
+Numeric features like VL and CD4 are now cleanly mapped into the \[0,1] range — ready for deep learning.
 
 ---
 
 ## Wrapping Up
 
-That’s the **pre-processing pipeline**:
+That’s the pre-processing pipeline!
 
-* Seed for reproducibility
-* Map categorical variables
-* Box–Cox transform + normalise lab values
-* Keep everything invertible for clinical interpretability
+This sets the stage for the next blogs, where we’ll explore embedding these features, feeding them into models, and eventually training RL agents on synthetic health trajectories.
 
-This sets the stage for the next blogs, where we’ll explore **embedding these features**, **feeding them into models**, and eventually **training RL agents** on synthetic health trajectories.
+If you’d like to try it yourself, I’ve prepared a Colab notebook in this Github folder.
 
-Cheers,
-– Nic
-
-[Not Yet FINISHED]
+Cheers,</br>
+\- Nic
