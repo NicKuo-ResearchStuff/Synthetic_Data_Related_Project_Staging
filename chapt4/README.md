@@ -18,110 +18,79 @@ actually does; let’s unpack it carefully.
 
 ## Step 0: Why Reshape?
 
-Our dataset starts out **row-based**:
+Our dataset starts out row-based:
 
-* Each row = a single patient at a single timestep.
-* Columns = lab values, regimen info, demographics, etc.
-* Ordered by `(PatientID, Timestep)`.
+<img src="ImageStuff/ZFig004_ArtHivHead.png" width="600"/>  
 
-But neural networks like RNNs or Transformers expect **(batch, sequence, features)** input.
+* Each row is a single patient at a single timestep.
+* With the column information of lab values, regimen info, demographics, etc.
+* Ordered by `(PatientID, Timestep)` in the last 2 columns.
+
+But neural networks like RNNs or Transformers expect input tensors of shape: `(batch, sequence, features)`.
 That means we need to group the rows for each patient into a 60-month time series.
 
 ---
 
 ## Step 1: Demo with PatientID + Timestep
 
-Before dropping IDs, let’s keep them in (`All_Data_demo`) and reshape with **12 columns**:
+Before dropping IDs, let’s keep them in (`All_Data_demo`) and reshape with 12 columns:
 
 ```python
 Cur_Len = 60
-arr12 = All_Data_demo.values.reshape((-1, Cur_Len, 12))
+arr12 = All_Data.values.reshape((-1, Cur_Len, 12))
 
-arr12[0, :10, :]   # patient 0, timesteps 0..9
-arr12[1, :10, :]   # patient 1, timesteps 0..9
+demo = arr12[0, :5, :]   # patient 0, timesteps 0..5
+print("###===###")
+for first_5_idx in range(5):
+  print(demo[first_5_idx, :])
+  print("#---")
 ```
+<img src="ImageStuff/ZFig017_SanityCheck01.png" width="400"/>  
 
-✅ You’ll see at the far right the pairs `(0,0) … (0,9)` for patient 0, and `(1,0) … (1,9)` for patient 1.
+Likewise,
+```python
+demo = arr12[1, :5, :]   # patient 0, timesteps 0..5
+print("###===###")
+for first_5_idx in range(5):
+  print(demo[first_5_idx, :])
+  print("#---")
+```
+<img src="ImageStuff/ZFig018_SanityCheck02.png" width="400"/>  
+
+You’ll see at the far right the pairs `(0,0) ... (0,5)` for patient 0, and `(1,0) ... (1,5)` for patient 1.
 This proves that reshape is cleanly grouping rows into patients and timesteps.
 
 ---
 
 ## Step 2: For Modelling — Drop IDs
 
-For training, we **don’t want the model to see PatientID or raw timestep**, so we drop them.
-That leaves **10 features** → `Feats_Len = 10`.
+For training, we don’t want the model to see PatientID or raw timestep, so we drop them.
+That leaves 10 features, `Feats_Len = 10`, used in the `Execute_C003` function
 
 ```python
-FEAT_COLS = ["VL", "CD4", "Rel CD4",
-             "Gender", "Ethnic", "Base Drug Combo",
-             "Comp. INI", "Comp. NNRTI",
-             "Extra PI", "Extra pk-En"]
-
-X = All_Data[FEAT_COLS].to_numpy()
-X = X.reshape(-1, Cur_Len, len(FEAT_COLS))
+data = data.reshape((-1, Cur_Len, Feats_Len))
+data = utils.TensorDataset(
+                torch.from_numpy(data).float(),
+                torch.full((Pat_Len, 1, 1), Cur_Len),
+                )
+trn_loader = utils.DataLoader(
+                    data,
+                    batch_size=Hyper001_BatchSize,
+                    shuffle=True,
+                    drop_last=True
+                    )
 ```
-
-Now each slice `X[i, :, :]` = full 60 months for patient *i*.
-
 ---
-
-## Step 3: Building a DataLoader
-
-We wrap this into a PyTorch `TensorDataset` and `DataLoader`:
-
-```python
-import torch
-from torch.utils.data import TensorDataset, DataLoader
-
-X_tensor = torch.from_numpy(X).float()
-T_tensor = torch.full((X_tensor.shape[0], 1), Cur_Len)  # optional metadata
-
-dataset = TensorDataset(X_tensor, T_tensor)
-loader  = DataLoader(dataset, batch_size=32, shuffle=True, drop_last=True)
-
-for batch_x, batch_len in loader:
-    print(batch_x.shape)  # (32, 60, 10)
-    break
-```
-
-And that’s it — we’ve turned a flat clinical table into a batched, sequential dataset ready for deep learning.
-
----
-
-## Step 4: Sanity Checks
-
-Always check two things:
-
-1. **Ordering**
-
-   ```python
-   All_Data = All_Data.sort_values(["PatientID", "Timestep"])
-   ```
-
-   Otherwise, `reshape` will scramble patients.
-
-2. **Divisibility**
-
-   ```python
-   assert len(All_Data) % Cur_Len == 0
-   ```
-
-   Every patient must have exactly 60 rows.
-
----
-
 ## Wrapping Up
 
 So, to recap:
 
 * `reshape((-1, Cur_Len, Feats_Len))` reorganises row-based data into `(patients, timesteps, features)`.
-* Using `All_Data_demo` (with IDs) shows the alignment clearly.
-* For modelling, we strip IDs and keep only real features (10 columns).
-* A simple DataLoader then gives us patient sequences in minibatches.
+* We demonstrate, with the IDs, to show the alignment.
+* But for modelling, we strip IDs and keep only clinically relavent features (10 columns).
+* The `DataLoader` then gives us patient sequences in minibatches.
 
-This sets the stage for the next implementation blog, where we’ll start embedding features and building our first neural models! 🚀
+This sets the stage for the next implementation blog, where we’ll start embedding features!
 
-Cheers,
+Cheers,</br>
 \- Nic
-
-[NOT YET DONE]
