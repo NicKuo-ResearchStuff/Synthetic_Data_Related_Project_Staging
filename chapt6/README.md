@@ -1,5 +1,7 @@
 # Rethinking Feature Schema and Data Loading
 
+<img src="ImageStuff/ZFig032_LiarLiarPantsOnFire.png" width="600"/>
+
 Hey, hello, and Kia Ora!
 
 If you’ve been following along, you’ve seen how in [Implementation 02](https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/tree/main/chapt4) we reshaped the ART for HIV dataset into `(patients, timesteps, features)`, and in [Implementation 03](https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/tree/main/chapt5) we built a feature schema to embed those features into dense vectors.
