@@ -8,7 +8,7 @@ In [Implementation 02](https://github.com/NicKuo-ResearchStuff/Health_Gym_AI/tre
 In [Implementation 03](https://github.com/NicKuo-ResearchStuff/Health_Gym_AI/tree/main/Blogs/Blogs_Z_Implementation/Implementation03), we built a schema to embed those features into dense vectors.
 And in the ["White Lies"](https://github.com/NicKuo-ResearchStuff/Health_Gym_AI/tree/main/Blogs/Blogs_Z_Implementation/RethinkingFeatureSchema) blog, I admitted that neither story was fully honest — loading and embedding are always intertwined.
 
-This time, we’ll take a step forward: instead of treating them separately, let’s **shuffle them together**.
+This time, we’ll take a step forward: instead of treating them separately, let’s shuffle them together.
 
 ---
 
@@ -19,24 +19,27 @@ But in reality, categorical features demand more space: each category becomes it
 
 Here’s our updated schema:
 
-```text
-index,name,type,num_classes,embedding_size,index_start,index_end
-0,VL,real,1,1,0,1
-1,CD4,real,1,1,1,2
-2,Gender,bin,2,2,2,4
-3,Ethnic,cat,4,4,4,8
-4,Base_Drug_Combo,cat,6,4,8,14
-5,Extra_PI,cat,6,4,14,20
-6,Extra_pk_En,bin,2,2,20,22
-```
+```python
+dtype = pd.DataFrame([
+    ["VL",                "real",     1,             1,                    0,  1],
+    ["CD4",               "real",     1,             1,                    1,  2],
+    ["Gender",            "bin",      2,             2,                    2,  4],
+    ["Ethnic",            "cat",      4,             4,                    4,  8],
+    ["Base_Drug_Combo",   "cat",      6,             4,                    8, 14],
+    ["Extra_PI",          "cat",      6,             4,                    14, 20],
+    ["Extra_pk_En",       "bin",      2,             2,                    20, 22],
+], columns=[
+    "name",                "type",    "num_classes", "embedding_size",     "index_start","index_end"
+])
+````
 
-Notice how `index_end - index_start` is no longer always 1 — it now matches `num_classes`.
+Notice how `index_end - index_start` is no longer always 1 -- it now matches `num_classes`.
 
 ---
 
 ## Step 1: Why the Extra Width?
 
-Because categorical features don’t collapse into a single number — they expand into **blocks of one-hot columns**.
+Because categorical features don’t collapse into a single number -- they expand into blocks of one-hot columns.
 
 Take a look:
 
@@ -63,8 +66,7 @@ loader, data = Execute_C003(
 )
 ```
 
-This is our **one-stop shop**: it handles reshaping, batching, and giving us PyTorch DataLoaders.
-Behind the curtain, `Execute_C003` is nothing fancy — it’s just the place where all the code comes together.
+`Execute_C003` is nothing fancy -- just the place where it handles reshaping, batching, and giving us PyTorch DataLoaders.
 
 ---
 
@@ -77,11 +79,9 @@ So far we’ve:
 * admitted the white lies (Rethinking blog), and
 * combined schema + loader into a single workflow (this blog).
 
-But here’s the tease: why stop at a single loader?
-Later, we’ll explore **curriculum learning** — starting models on shorter sequences, then gradually extending to longer horizons.
+If you’d like to try it yourself, I’ve prepared a Colab notebook in this Github folder.
 
-That’s where multiple loaders of different lengths come in.
-Stay tuned — it’s where the real training magic happens.
+Later, we’ll explore curriculum learning — starting models on shorter sequences, then gradually extending to longer horizons.
 
 Cheers,</br>
 \- Nic
