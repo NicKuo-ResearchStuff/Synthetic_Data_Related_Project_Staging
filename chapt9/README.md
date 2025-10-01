@@ -1,8 +1,14 @@
 # Health Gym v1: An LSTM-based WGAN
 
+<img src="ImageStuff/ZFig036_WganV1Logo.png" width="600"/>  
+
+Hey, hello, and Kia Ora!
+
+Over the next few blogs, we will break down the core components of the Health Gym WGAN-GP model.
+
 ---
 
-## Part 1. LSTM From Scratch
+## Step 1: LSTM From Scratch
 
 Long Short-Term Memory (LSTM) remains one of the most widely used tools for sequence modelling. Its defining feature is the use of gates to regulate information flow across time.
 
@@ -54,7 +60,7 @@ class MyLSTM(nn.Module):
 
 ---
 
-## Part 2. The GAN Architecture
+## Step 2: The GAN Architecture
 
 In original the Health Gym project (Kuo et al., *Scientific Data* 2022), LSTMs are embedded inside a Wasserstein GAN with Gradient Penalty (WGAN-GP) to generate realistic clinical time series. Here’s how it works.
 
@@ -117,7 +123,7 @@ Design: embeddings for discrete variables, dense mixing, a biLSTM for temporal r
 
 ---
 
-## Wrapping Up
+## Step 3: Wrapping Up
 
 In this post, we explored how LSTMs can be embedded within GANs, showing how low-level sequence modules underpin high-level generative tasks such as synthetic EHR creation.
 
