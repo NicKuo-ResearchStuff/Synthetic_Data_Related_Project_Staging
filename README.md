@@ -1,6 +1,6 @@
 <!-- Logo and Branding -->
 <p align="left">
-  <img src="Supporting_Images/MCM_Logo.png" alt="Masked Clinical Modelling Logo" width="300"/>
+  <img src="ImageStuff/WFig001_MCMLogo.png" alt="Masked Clinical Modelling Logo" width="300"/>
 </p>
 
 ---
