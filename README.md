@@ -36,7 +36,7 @@ preserve key survival metrics such as hazard ratios and calibration.
 
 </td>
 <td width="40%">
-  <img src="Supporting_Images/MCM_Overview.png" alt="MCM Framework Overview" width="300"/>
+  <img src="ImageStuff/WFig002_MCMSurivival.png" alt="MCM Framework Overview" width="300"/>
 </td>
 </tr>
 </table>
@@ -60,7 +60,7 @@ This mechanism allows MCM to:
 
 </td>
 <td width="40%">
-  <img src="Supporting_Images/MCM_Pipeline.png" alt="Masked Clinical Modelling Pipeline" width="300"/>
+  <img src="ImageStuff/WFig003_MCMIdeas.png" alt="Masked Clinical Modelling Pipeline" width="300"/>
 </td>
 </tr>
 </table>
