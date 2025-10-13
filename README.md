@@ -31,7 +31,7 @@ preserve key survival metrics such as hazard ratios and calibration.
 * Dual-purpose framework: supports both standalone synthetic data generation and targeted augmentation.
 * Utility-oriented: preserves clinical interpretability (hazard ratios, calibration slopes).
 * Attention-guided architecture: predicts masked clinical features using contextual cues.
-* Evaluation-ready: seamlessly integrates with standard survival models (CoxPH, DeepSurv).
+* Evaluation-ready: seamlessly integrates with standard survival models (*e.g.,* CoxPH).
 * Open science: fully reproducible notebooks and Colab links for demonstration and benchmarking.
 
 </td>
