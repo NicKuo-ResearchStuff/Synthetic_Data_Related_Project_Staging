@@ -54,7 +54,7 @@ Latest update: XXXX-XX-XX.
   
 </td>
 <td width="40%">
-  <img src="Supporting_Images/ZFig025_HandsOn.png" alt="Health + Data Illustration" width="300"/>
+  <img src="ImageStuff/EFig02_UseCases.png" alt="Health + Data Illustration" width="300"/>
 </td>
 </tr>
 </table>
