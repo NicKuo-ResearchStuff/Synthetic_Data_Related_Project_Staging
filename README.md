@@ -1,4 +1,4 @@
-# Synthetic Data: A Catalyst for Scalable, Modern Education and Innovation
+# Synthetic Data:</br> A Catalyst for Scalable, Modern Education and Innovation
 
 <!-- Logo and Branding -->
 <p align="left">
@@ -29,12 +29,12 @@ When generated responsibly, it enables educators, students, and developers to:
 
 | Domain                               | Typical Structure    | Example Variables                                          |
 | ------------------------------------ | -------------------- | ---------------------------------------------------------- |
-| **Healthcare / EMR**                 | Longitudinal records | `patient_id, visit_date, bp, creatinine, diagnosis_code`   |
-| **Finance / Banking**                | Transactions         | `customer_id, date, type, amount, balance`                 |
-| **Government / Census**              | Surveys              | `person_id, age, income, occupation, region`               |
-| **Education / Assessment**           | Learning analytics   | `student_id, module, quiz_score, time_spent`               |
-| **Manufacturing / IoT**              | Sensor logs          | `machine_id, timestamp, pressure, temperature, alert_flag` |
-| **Psychology / Behavioural Science** | Experiments          | `participant_id, stimulus, response_time, accuracy`        |
+| **Healthcare / EMR**                 | Longitudinal records | `patient_id`, `visit_date`,</br> `bp`, `creatinine`, `diagnosis_code`   |
+| **Finance / Banking**                | Transactions         | `customer_id`, `date`,</br> `type`, `amount`, `balance`                 |
+| **Government / Census**              | Surveys              | `person_id`,</br> `age`, `income`, `occupation`, `region`               |
+| **Education / Assessment**           | Learning analytics   | `student_id`,</br> `module`, `quiz_score`, `time_spent`               |
+| **Manufacturing / IoT**              | Sensor logs          | `machine_id`, `timestamp`,</br> `pressure`, `temperature`, `alert_flag` |
+| **Psychology / Behavioural Science** | Experiments          | `participant_id`,</br> `stimulus`, `response_time`, `accuracy`        |
 
 These domains share one thing in common: their data can be easily represented as CSV tables, making them ideal for programmatic synthesis and reproducible teaching.
 
@@ -101,8 +101,8 @@ The same workflow can be applied to any structured CSV domain, benefitting:
 
 ## Contact
 
-For questions or collaboration opportunities, please reach out to Nic at</br>
-[n.kuo@unsw.edu.au](mailto:n.kuo@unsw.edu.au)
+For questions or collaboration opportunities,</br>
+please reach out to Nic at: [n.kuo@unsw.edu.au](mailto:n.kuo@unsw.edu.au)
 
 ---
 
