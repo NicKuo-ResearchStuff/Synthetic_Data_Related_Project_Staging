@@ -10,7 +10,7 @@
 Cellular Scale Model (CSM) is a prototype protein large language–model (PLLM) pipeline
 for enhancing variant interpretation in cancer.
 
-It builds on the pretrained **ESM-2** model and fine-tunes it on human, cancer-relevant
+It builds on the pretrained ESM-2 model and fine-tunes it on human, cancer-relevant
 variants so that researchers can:</br>
 - compare evolutionary vs cellular views of a mutation (ESM-2 vs CSM),
 - visualise full mutational landscapes with heatmaps, and
@@ -28,26 +28,24 @@ This repository accompanies the Honours thesis:</br>
 
 ### Key Features
 
-- **ESM-2 + LoRA**  
+- ESM-2 + LoRA</br>  
   Parameter-efficient fine-tuning of the 650M-parameter ESM-2 model.
 
-- **Cancer-aware scoring**  
+- Cancer-aware scoring</br>  
   Compute log-likelihood ratios (LLRs) and Δ-scores (CSM − ESM-2) for
   mutations of interest.
 
-- **ClinVar integration**  
+- ClinVar integration</br>  
   Simple utilities for aligning model scores with ClinVar clinical
   significance labels.
 
-- **Visual diagnostics**  
+- Visual diagnostics  
   - global variant-effect heatmaps  
   - delta-score kernel density plots  
   - CSM vs ESM-2 scatterplots
 
 </td>
-<td width="40%">
-  <img src="Supporting_Images/CSM_Overview.png" alt="CSM overview illustration" width="300"/>
-</td>
+
 </tr>
 </table>
 
