@@ -1,14 +1,14 @@
 <!-- Logo and Branding -->
 
 <p align="left">
-  <img src="Supporting_Images/PRIME-CVD_Logo.png" alt="PRIME-CVD Logo" width="300"/>
+  <img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Logo.png" alt="PRIME-CVD Logo" width="300"/>
 </p>
 
 ---
 
 # About PRIME‑CVD
 
-PRIME‑CVD (Parametrically Rendered Informatics Medical Environment for Cardiovascular Disease) is an educational, privacy-preserving synthetic dataset and teaching environment developed by the Centre for Big Data Research in Health (CBDRH), UNSW. PRIME‑CVD provides fully parameterised, DAG-driven synthetic data designed specifically for teaching causal reasoning, EMR cleaning, and cardiovascular risk modelling without exposing real patient records.
+PRIME‑CVD (Parametrically Rendered Informatics Medical Environment for Cardiovascular Disease) is an educational, privacy-preserving simulated dataset and teaching environment developed by the Centre for Big Data Research in Health (CBDRH), UNSW. PRIME‑CVD provides fully parameterised, DAG-driven simulated data designed specifically for teaching causal reasoning, EMR cleaning, and cardiovascular risk modelling without exposing real patient records.
 
 * **What it provides:** two complementary data assets (a clean cohort and an EMR-style relational transform), worked notebooks, and reproducible code for cohort assembly, harmonisation, survival analysis, and causal-sensitivity experiments.
 * **How it’s built:** variables are generated deterministically from a hand-specified causal DAG parameterised using public Australian statistics (ABS, AIHW) and published epidemiologic estimates.
@@ -17,7 +17,7 @@ PRIME‑CVD (Parametrically Rendered Informatics Medical Environment for Cardiov
   * **Data Asset 1:** Clean, analysis-ready cohort (50,000 simulated adults; baseline vars: IRSD quintile, age, smoking, BMI, diabetes, CKD, HbA1c, eGFR, SBP, AF, cvd_event, cvd_time).
   * **Data Asset 2:** Relational EMR-style tables (PatientMasterSummary, PatientChronicDiseases, PatientMeasAndPath) with injected lexical heterogeneity, missingness, unit inconsistencies, and non-sequential IDs.
 * **Why it’s safe:** all records are generated de novo from aggregate priors; no patient-level EMR is used, minimising disclosure risk.
-* **Who it’s for:** educators and students learning data cleaning, causal inference, bias analysis, and survival modelling; researchers testing causal discovery and MNAR sensitivity.
+* **Who it’s for:** educators and students learning data cleaning, causal inference, bias analysis, and survival modelling; researchers testing causal discovery.
 
 ---
 
