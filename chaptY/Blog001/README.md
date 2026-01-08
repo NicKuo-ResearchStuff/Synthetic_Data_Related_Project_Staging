@@ -1,36 +1,45 @@
-# PRIME-CVD Data Asset 1: A Clean, Causal Cohort for Teaching Cardiovascular Risk Modelling
+# PRIME-CVD Data Asset 1:</br> A Clean, Causal Cohort for Teaching Cardiovascular Risk Modelling
 
-<img src="Supporting_Images/PRIME-CVD_Overview.png" width="600"/>
+<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog01.png" width="600"/>
 
 Hey, hello, and Kia Ora!
 
-In this post, we introduce **PRIME-CVD Data Asset 1**, a clean, analysis-ready synthetic cohort designed specifically for teaching cardiovascular risk modelling, exploratory data analysis, and causal reasoning in medical informatics.</br>
-Unlike toy datasets, PRIME-CVD preserves realistic population structure, socioeconomic gradients, and clinically meaningful imbalance — while remaining fully synthetic and safe for classroom use.
+In this post, we introduce PRIME-CVD Data Asset 1, a clean, analysis-ready simluated cohort designed specifically for teaching cardiovascular risk modelling, exploratory data analysis, and causal reasoning in medical informatics.</br>
+Unlike toy datasets, PRIME-CVD preserves realistic population structure, socioeconomic gradients, and clinically meaningful imbalance -- while remaining fully safe for classroom use.
 
-This post mirrors how we introduce the dataset **live in class**: by inspecting its shape, columns, and distributions before doing *any* modelling.
+This post mirrors how we introduce the dataset live in class: by inspecting its shape, columns, and distributions before doing any modelling.
 
 ---
 
 ## Data Provenance
 
-PRIME-CVD is a **fully synthetic cohort**, generated *de novo* from a hand-specified causal directed acyclic graph (DAG) parameterised using publicly available Australian population statistics (ABS, AIHW) and published epidemiologic effect estimates.</br>
+PRIME-CVD is a fully simulated cohort, generated de novo from a hand-specified causal directed acyclic graph (DAG) parameterised using publicly available Australian population statistics (ABS, AIHW) and published epidemiologic effect estimates.</br>
 
 No real patient-level electronic medical record (EMR) data are used at any stage. Every individual, covariate, and outcome is simulated deterministically from aggregate priors, ensuring negligible disclosure risk while preserving realistic joint structure.
 
-Data Asset 1 represents a **primary-prevention cardiovascular population** of 50,000 simulated adults, designed to resemble contemporary EMR-based cohorts used in 5-year CVD risk modelling studies.
+Data Asset 1 represents a primary-prevention cardiovascular population of 50,000 simulated adults, designed to resemble contemporary EMR-based cohorts used in 5-year CVD risk modelling studies.
 
 ---
 
-## Dataset Shape and Scope
+## A Glimpse of the Data
 
-We begin our live classroom demo exactly as analysts would encounter a new dataset — by asking three simple questions:
+We begin our live classroom by looking at the top few rows
 
-1. *How big is it?*
-2. *What variables does it contain?*
-3. *Which columns matter most for downstream analysis?*
+```python
+print("\n" + "###===###"*5)
+print("DataAsset1_preview")
+df.head()
+```
 
 ```
-Rows × Columns: 50,000 × 13
+###===######===######===######===######===###
+DataAsset1_preview
+   IRSD_quintile        Age smoking_status        BMI  diabetes  CKD        HbA1c       eGFR         SBP  AF  cvd_event  cvd_time
+0              4  50.395265            non  28.166346         0    0     4.317890  83.077560  118.668194   0          1  2.963423
+1              3  39.226761             ex  16.825992         0    0     4.700951  81.488401  123.719732   0          0  4.407252
+2              5  55.489004            non  23.523419         0    0     3.669685  86.779230  126.650517   0          0  4.490739  
+3              4  51.910529            non  31.981932         0    0     4.486977  94.704093  113.889670   0          0  4.888965 
+4              1  47.091570             ex  25.351159         0    0     4.315440  86.336256  125.912615   0          0  4.490326 
 ```
 
 Each row corresponds to one simulated individual, with one-row-per-patient structure suitable for immediate exploratory analysis and survival modelling.
@@ -64,25 +73,25 @@ This design allows students to immediately distinguish:
 
 ---
 
-## First Look: Distributions and Plausibility
+## Distributions and Plausibility
 
-Before fitting any models, we examine univariate distributions — a habit we explicitly teach.</br>
+Before fitting any models, we examine univariate distributions -- a habit we explicitly teach.</br>
 Histograms and boxplots reveal:
 
-* **Age**: approximately normal, centred around mid-life, bounded at 18–90
-* **BMI**: right-skewed, with realistic upper tails
-* **SBP**: bell-shaped with hypertensive extremes
-* **eGFR**: left-skewed decline consistent with ageing and CKD
-* **HbA1c**: bimodal structure reflecting diabetic vs non-diabetic subpopulations
-* **Follow-up time**: concentrated near 5 years with administrative censoring
+* Age: approximately normal, centred around mid-life, bounded at 18–90
+* BMI: right-skewed, with realistic upper tails
+* SBP: bell-shaped with hypertensive extremes
+* eGFR: left-skewed decline consistent with ageing and CKD
+* HbA1c: bimodal structure reflecting diabetic vs non-diabetic subpopulations
+* Follow-up time: concentrated near 5 years with administrative censoring
 
-Outliers are present — deliberately — to support discussions about robustness, transformation, and data quality checks.
+An example code is attached to this folder for supporting discussions about robustness, transformation, and data quality checks.
 
 ---
 
 ## Categorical Structure and Imbalance
 
-PRIME-CVD is **not class-balanced**, by design.
+PRIME-CVD is not class-balanced, by design.
 
 ```
 ──────────────────────────────────────────────────────────────
@@ -106,20 +115,17 @@ Students quickly see why naive accuracy metrics fail in this context.
 
 ## Missingness and Data Quality
 
-Although Data Asset 1 is “clean”, it is **not perfect**.</br>
-We explicitly demonstrate how to inspect missingness:
-
+Although Data Asset 1 is “clean”, it is not perfect.</br>
+Studnets must apply their knowledge to:
 * identify columns with any missing values,
 * prioritise clinically important variables,
-* and decide which fields require cleaning before modelling.
-
-This sets the stage for Data Asset 2, where the same cohort is deliberately decomposed into messy EMR-style tables.
+* and decide which fields require extra wrangling before modelling.
 
 ---
 
 ## Teaching Philosophy
 
-PRIME-CVD Data Asset 1 represents **what analysts wish they had**:
+PRIME-CVD Data Asset 1 represents what analysts wish they had:
 
 * one row per patient,
 * coherent variable naming,
@@ -131,26 +137,14 @@ It exists to let students focus on:
 * exploratory data analysis,
 * stratification,
 * survival modelling,
-* and interpretation — *before* confronting EMR chaos.
+* and interpretation -- before confronting EMR chaos.
 
 In later labs, students work backwards from the relational EMR representation to recover this structure, reinforcing the full analytic lifecycle.
 
 ---
 
-## Closing Thoughts
-
-We introduce PRIME-CVD Data Asset 1 live, with Python, not slides.</br>
-By the end of the first 30 minutes, students know:
-
-* what variables exist,
-* which distributions look reasonable,
-* where imbalance lives,
-* and why causal assumptions matter.
-
-Everything else — cleaning, reconstruction, modelling, fairness — builds naturally from this foundation.
-
 Cheers,</br>
-- Nic
+\- Nic
 
 (Last edit: 2026-01-08)
 
