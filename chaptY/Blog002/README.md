@@ -1,6 +1,6 @@
 # PRIME-CVD Data Asset 1:</br> Synthetic Cohort Characteristics and Baseline Structure
 
-<img src="XXX" width="600"/>
+<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog02.png" width="600"/>
 
 Hey, hello, and Kia Ora!
 
