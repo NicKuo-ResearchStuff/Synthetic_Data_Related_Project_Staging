@@ -12,6 +12,8 @@ Unlike the companion teaching blog, which focuses on how students interact with 
 
 ## Cohort Overview
 
+<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog02_Fig01.png" width="800"/>
+
 PRIME-CVD Data Asset 1 comprises 50,000 simulated adults aged 18–90 years, representing a primary-prevention cardiovascular population.
 
 The cohort was generated de novo from a hand-specified causal directed acyclic graph (DAG), parameterised using publicly available Australian population statistics (ABS, AIHW) and published epidemiologic effect estimates. No real patient-level data are used.
