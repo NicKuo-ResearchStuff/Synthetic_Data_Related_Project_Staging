@@ -1,6 +1,6 @@
 # PRIME-CVD Data Asset 1:</br> Designing Socioeconomic Stratification Assignments</br> with a Clean CVD Cohort
 
-<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog02.png" width="600"/>
+<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog03_a.png" width="600"/>
 
 Hey, hello, and Kia Ora!
 
@@ -53,6 +53,8 @@ This mirrors exactly what analysts must do when validating EMR-derived cohorts i
 ---
 
 ## What the Expected Output Looks Like
+
+<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog03_Fig01.png" width="800"/>
 
 The canonical solution to this task is an IRSD-stratified distributional panel, combining:
 
