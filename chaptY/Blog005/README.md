@@ -1,6 +1,6 @@
 # PRIME-CVD Data Asset 1</br> Where Did This Dataset Come From?
 
-<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog03.png" width="600"/>
+<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog05.png" width="600"/>
 
 Hey, hello, and Kia Ora!
 
@@ -32,7 +32,7 @@ and forces a different design philosophy.
 ---
 
 ## Encoded Causal Relationships and Public Evidence
-
+<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog05_Fig01.png" width="800"/>
 PRIME-CVD Data Asset 1 is generated from a hand-specified causal DAG. Each edge below is supported by openly available population statistics or epidemiologic literature.
 
 | **Parent → Child**   |                                    **What is being encoded** | **Primary open sources**                                                                                                                                                                                                                                               |
