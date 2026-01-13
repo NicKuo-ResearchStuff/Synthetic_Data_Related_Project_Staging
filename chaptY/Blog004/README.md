@@ -1,6 +1,6 @@
 # PRIME-CVD Data Asset 2:</br> A Relational EMR-Style Dataset for Teaching</br> Data Cleaning and Reconstruction
 
-<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog03.png" width="600"/>
+<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog04.png" width="600"/>
 
 Hey, hello, and Kia Ora!
 
@@ -14,7 +14,7 @@ This post documents how the dataset is structured and what students are expected
 
 ## From Clean Cohort to EMR Tables
 
-<img src="ZFig011_Data2PipelineDerivation.drawio.drawio.png" width="800"/>
+<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog04_Fig01.png" width="800"/>
 
 All individuals, covariates, and outcomes are retained from Data Asset 1 -- but they are divided across multiple tables and distorted by realistic EMR artefacts. This mirrors common primary-care and hospital database architectures, where identifiers, diagnoses, and measurements reside in separate systems and must be re-linked for analysis.
 
