@@ -1,6 +1,6 @@
 # PRIME-CVD Data Asset 1:</br>Understanding Baseline Patients and Cox Models</br>with a Clean CVD Cohort
 
-<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog03_b.png" width="600"/>
+<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog06.png" width="600"/>
 
 Hey, hello, and Kia Ora!
 
