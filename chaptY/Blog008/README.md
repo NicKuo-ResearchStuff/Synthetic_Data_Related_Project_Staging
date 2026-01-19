@@ -83,35 +83,15 @@ Different choices (for example, whether to include “high blood sugar” as dia
 
 ## What the Constructed Prevalence Looks Like
 
-After collapsing diagnosis records to patient-level presence indicators, the following prevalence estimates emerge in the 500-patient demonstration cohort:
+After collapsing diagnosis records to patient-level presence indicators and explicitly re-indexing to the full 500-patient demonstration cohort (so that patients with no recorded diagnosis rows are retained as zeros), the following prevalence estimates emerge:
 
 | Disease  | Prevalence (%) |
 | -------- | -------------- |
-| Diabetes | 91.3           |
-| CKD      | 4.3            |
-| AF       | 6.5            |
+| Diabetes | 8.4            |
+| CKD      | 0.4            |
+| AF       | 0.6            |
 
-These values are not intended to reflect population burden.
-Instead, they illustrate how prevalence in EMR data is constructed rather than observed.
-
-Importantly, the summed prevalence exceeds 100%.
-
-This is not an error.
-
----
-
-## Why Prevalence Sums Exceed 100%
-
-In EMR data, diagnoses are recorded as overlapping conditions, not mutually exclusive states.
-
-Each prevalence estimate is calculated independently as the proportion of patients with any recorded evidence of that condition. A single patient may therefore contribute simultaneously to multiple disease categories -- for example, diabetes and atrial fibrillation.
-
-As a result:
-
-* prevalence estimates do not partition the cohort, and
-* their sum has no meaningful upper bound.
-
-This mirrors real EMR problem lists and reinforces a key methodological lesson for students: disease prevalence depends on definitions, linkage rules, and assumptions about comorbidity.
+Importantly, if students obtain 91.3% for diabetes, they are very likely making a common EMR error: computing prevalence within the diagnosis table itself (*i.e.,* conditioning on only those patients who appear in `PatientChronicDiseases` after harmonisation), rather than conditioning on the entire 500-patient cohort defined in the master table. In other words, they have inadvertently replaced the denominator “500 patients” with “patients who have at least one recorded (or recognised) diagnosis row”, which inflates prevalence and misrepresents absence as missingness.
 
 ---
 
