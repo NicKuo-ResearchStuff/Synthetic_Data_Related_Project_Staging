@@ -1,6 +1,6 @@
 # Discrimination Blog 01</br>Overall idea of discrimination
 
-<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog_Discrimination01.png" width="600"/>
+<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog09_D1.png" width="600"/>
 
 Hey, hello, and Kia Ora!
 
