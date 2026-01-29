@@ -1,5 +1,7 @@
 # Discrimination Blog 02</br> A reference for discrimination metrics
 
+<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog10_D2.png" width="600"/>
+
 The purpose of this post is simple: to provide a single, stable place where all discrimination-related quantities used in this series are defined in a consistent way. Rather than reintroducing definitions repeatedly in later posts, this page serves as a reference glossary for confusion-matrix counts, discrimination metrics, and survival-specific measures, including their mathematical meaning, interpretation, and corresponding Python implementations. You are not expected to read this post linearly; instead, think of it as a resource to return to whenever a term or metric needs clarification.
 
 Cheers, <br>
