@@ -125,6 +125,6 @@ Time-to-event discrimination asks:</br>
 ---
 
 Cheers,</br>
-- Nic
+\- Nic
 
 (Last edit: 2026-02-16)
