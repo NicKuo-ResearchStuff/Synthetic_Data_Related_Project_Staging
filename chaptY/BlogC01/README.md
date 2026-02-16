@@ -1,6 +1,6 @@
 # Calibration Blog 01</br>probability honesty in survival models
 
-<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog12_D4.png" width="600"/>
+<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog13_C1.png" width="600"/>
 
 Hey, hello, and Kia Ora!
 
