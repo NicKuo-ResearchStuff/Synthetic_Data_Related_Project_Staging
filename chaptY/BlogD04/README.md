@@ -1,4 +1,4 @@
-# Discrimination Blog 04</brTime-to-event discrimination: details and interpretation
+# Discrimination Blog 04</br>Time-to-event discrimination: details and interpretation
 
 <img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog12_D4.png" width="600"/>
 
