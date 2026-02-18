@@ -1,6 +1,6 @@
 # Calibration Blog 02</br>Empirical calibration and the slope $\beta(t)$
 
-<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog13_C1.png" width="600"/>
+<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog14_C2.png" width="600"/>
 
 Hey, hello, and Kia Ora!
 
