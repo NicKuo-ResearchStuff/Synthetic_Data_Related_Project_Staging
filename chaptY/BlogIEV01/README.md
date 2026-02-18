@@ -1,6 +1,6 @@
 # Internal-External Validation Blog 01</br>when calibration leaves home
 
-<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog15_IEV01.png" width="600"/>
+<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog15_IEV1.png" width="600"/>
 
 Hey, hello, and Kia Ora!
 
