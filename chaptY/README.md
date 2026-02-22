@@ -1,7 +1,7 @@
 <!-- Logo and Branding -->
 
 <p align="left">
-  <img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Logo.png" alt="PRIME-CVD Logo" width="300"/>
+  <img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Logo_ReDo.png" alt="PRIME-CVD Logo" width="300"/>
 </p>
 
 ---
@@ -10,14 +10,27 @@
 
 PRIME‑CVD (Parametrically Rendered Informatics Medical Environment for Cardiovascular Disease) is an educational, privacy-preserving simulated dataset and teaching environment developed by the Centre for Big Data Research in Health (CBDRH), UNSW. PRIME‑CVD provides fully parameterised, DAG-driven simulated data designed specifically for teaching causal reasoning, EMR cleaning, and cardiovascular risk modelling without exposing real patient records.
 
-* **What it provides:** two complementary data assets (a clean cohort and an EMR-style relational transform), worked notebooks, and reproducible code for cohort assembly, harmonisation, survival analysis, and causal-sensitivity experiments.
-* **How it’s built:** variables are generated deterministically from a hand-specified causal DAG parameterised using public Australian statistics (ABS, AIHW) and published epidemiologic estimates.
-* **Datasets included:**
+* What it provides:
+  * two complementary data assets (a clean cohort and an EMR-style relational transform),
+  * worked notebooks (survival analysis, causal-sensitivity experiments, ... etc), and
+  * reproducible code for cohort assembly and harmonisation.
+* How it’s built:
+  * variables are generated deterministically from a hand-specified causal DAG
+  * parameterised using public Australian statistics (ABS, AIHW) and
+  * published epidemiologic estimates.
+* Datasets included:
+  * <ins>Data Asset 1</ins>: Clean, analysis-ready cohort
+    * 50,000 simulated adults
+    * IRSD quintile, age, smoking, BMI, diabetes, CKD, HbA1c, eGFR, SBP, AF, cvd_event, cvd_time
+  * <ins>Data Asset 2</ins>: Relational EMR-style tables with injected heterogeneity, missingness, and unit inconsistencies
+    * PatientMasterSummary
+    * PatientChronicDiseases
+    * PatientMeasAndPath
 
-  * **Data Asset 1:** Clean, analysis-ready cohort (50,000 simulated adults; baseline vars: IRSD quintile, age, smoking, BMI, diabetes, CKD, HbA1c, eGFR, SBP, AF, cvd_event, cvd_time).
-  * **Data Asset 2:** Relational EMR-style tables (PatientMasterSummary, PatientChronicDiseases, PatientMeasAndPath) with injected lexical heterogeneity, missingness, unit inconsistencies, and non-sequential IDs.
-* **Why it’s safe:** all records are generated de novo from aggregate priors; no patient-level EMR is used, minimising disclosure risk.
-* **Who it’s for:** educators and students learning data cleaning, causal inference, bias analysis, and survival modelling; researchers testing causal discovery.
+**Why it’s safe**</br>
+All records are generated de novo from aggregate priors; no patient-level EMR is used, minimising disclosure risk.</br>
+**Who it’s for**</br>
+Educators and students learning data cleaning, causal inference, bias analysis, and survival modelling; researchers testing causal discovery.
 
 ---
 
@@ -106,35 +119,10 @@ A central teaching artifact: the causal DAG used to generate the cohort. The DAG
 ---
 
 # Team
-
-<table>
-<tr>
-<td align="center">
-  <img src="Supporting_Images/Nic_Kuo.png" alt="Nic Kuo" width="120"/><br/>
-  <sub><b>Dr. Nic Kuo (UNSW)</b></sub>
-</td>
-<td align="center">
-  <img src="Supporting_Images/Marzia_Hoque.png" alt="Marzia Hoque" width="120"/><br/>
-  <sub><b>Marzia Hoque (CBDRH)</b></sub>
-</td>
-<td align="center">
-  <img src="Supporting_Images/Blanca_Gallego.png" alt="Blanca Gallego" width="120"/><br/>
-  <sub><b>Blanca Gallego (CBDRH)</b></sub>
-</td>
-<td align="center">
-  <img src="Supporting_Images/Louisa_Jorm.png" alt="Louisa Jorm" width="120"/><br/>
-  <sub><b>Prof. Louisa Jorm (UNSW)</b></sub>
-</td>
-</tr>
-</table>
-
----
-
-<!-- CBDRH Branding -->
-
-<p align="left">
-  <img src="Supporting_Images/CBDRH_Logo.png" alt="UNSW CBDRH Logo" width="300"/>
-</p>
+* [Dr. Nic Kuo (CBDRH, UNSW)](https://www.unsw.edu.au/staff/nic-kuo)
+* [Dr. Marzia Hoque (CBDRH, UNSW)](https://www.unsw.edu.au/staff/marzia-hoque-tania)
+* [Prof. Blanca Gallego (CBDRH, UNSW)](https://www.unsw.edu.au/staff/blanca-gallego-luxan)
+* [Prof. Louisa Jorm (CBDRH, UNSW)](https://www.unsw.edu.au/staff/louisa-jorm)
 
 For questions or collaboration: Nic Kuo — [n.kuo@unsw.edu.au](mailto:n.kuo@unsw.edu.au)
 
@@ -152,4 +140,4 @@ All PRIME‑CVD code, figures, and datasets are released under the **Creative Co
 2. Australian Bureau of Statistics (ABS) population statistics.
 3. Australian Institute of Health and Welfare (AIHW) condition prevalence summaries.
 
-(Last edit: 2026-01-07)
+(Last edit: 2026-02-23)
