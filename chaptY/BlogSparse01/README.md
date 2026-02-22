@@ -1,6 +1,6 @@
 # Lasso Blog 01</br>when deployment reality meets variable count
 
-<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_BlogXX_D5.png" width="600"/>
+<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog17_Sparse1L.png" width="600"/>
 
 Hey, hello, and Kia Ora!
 
@@ -135,6 +135,6 @@ To make this intuitive, we plot the hazard ratios side-by-side:
 ---
 
 Cheers,</br>
-- Nic
+\- Nic
 
 (Last edit: 2026-02-23)
