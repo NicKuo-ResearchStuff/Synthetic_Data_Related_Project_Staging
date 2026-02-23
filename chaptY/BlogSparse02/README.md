@@ -1,6 +1,6 @@
 # Lasso Blog 02</br>when ranking shifts more than coefficients
 
-<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog17_Sparse1L.png" width="600"/>
+<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog18_Sparse2.png" width="600"/>
 
 Hey, hello, and Kia Ora!
 
