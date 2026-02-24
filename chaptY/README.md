@@ -49,7 +49,7 @@ Educators and students learning data cleaning, causal inference, bias analysis, 
 
 </td>
 <td width="40%">
-  <img src="Supporting_Images/PRIME-CVD_Overview.png" alt="PRIME‑CVD Overview" width="300"/>
+  <img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_FrontPage_Highlights.png" alt="PRIME‑CVD Overview" width="400"/>
 </td>
 </tr>
 </table>
@@ -140,4 +140,4 @@ All PRIME‑CVD code, figures, and datasets are released under the **Creative Co
 2. Australian Bureau of Statistics (ABS) population statistics.
 3. Australian Institute of Health and Welfare (AIHW) condition prevalence summaries.
 
-(Last edit: 2026-02-23)
+(Last edit: 2026-02-25)
