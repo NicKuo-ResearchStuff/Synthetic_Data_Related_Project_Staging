@@ -1,6 +1,6 @@
 # Viz 02</br>implementing t-SNE and reading the colours
 
-<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog20_Viz1_Fig0x1.png" width="600"/>
+<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog21_Viz2.png" width="600"/>
 
 Hey, hello, and Kia Ora!
 
@@ -97,6 +97,10 @@ Recolouring the same `Z` keeps the terrain fixed and changes only the “overlay
 ---
 
 ## Diabetes vs Age: same islands, different stories
+
+<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog21_Viz2_Fig01.png" width="600"/>
+<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog21_Viz2_Fig02.png" width="600"/>
+
 
 ### Similarity: the islands sit in the same places
 
