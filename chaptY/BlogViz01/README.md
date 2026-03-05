@@ -1,6 +1,6 @@
 # Viz 01</br>when risk space has shape
 
-<img src="https://github.com/NicKuo-ResearchStuff/PRIME_CVD/blob/main/Supporting_Images/ZFig_PRIME_CVD_Blog17_Sparxse1.png" width="600"/>
+<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog20_Viz1.png" width="600"/>
 
 Hey, hello, and Kia Ora!
 
@@ -69,6 +69,7 @@ Who lives near whom in risk space?
 
 t-SNE is particularly good at revealing discrete phenotype.
 
+<img src="https://github.com/NicKuo-ResearchStuff/Synthetic_Data_Related_Project_Staging/blob/main/chaptY/ImageStuff/ZFig_PRIME_CVD_Blog20_Viz1_Fig01.png" width="600"/>
 
 ---
 
@@ -82,6 +83,8 @@ If the data geometry is cluster-driven, then:
 
 It is hence worth asking:</br>
 What does the risk landscape actually look like?
+
+We will implement it in the next blog.
 
 ---
 
